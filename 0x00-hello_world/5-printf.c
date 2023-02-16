@@ -1,10 +1,14 @@
 #include <stdio.h>
+
 /**
- * main - Using Printf function
- * return: 0
+ * main - prints " using the print function"
+ * Return: Always 0.
+ *
  */
+
 int main(void)
+
 {
-printf("with proper grammer,but the outcome is a piece of art,\n")
-ireturn (0);
-}	
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
+}
