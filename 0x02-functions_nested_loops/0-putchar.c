@@ -1,9 +1,11 @@
 #include (stdio.h)
 
-int main(void)
+int main print char
 return 0;
 {
-	printf("_putchar",\n);
-	return 0;
+/*
+ * printf("_putchar",\n);
+ * return 0;
+*/
 
 }
