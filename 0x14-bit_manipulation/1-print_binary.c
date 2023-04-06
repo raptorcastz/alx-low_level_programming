@@ -14,13 +14,13 @@ void print_binary(unsigned long int n)
 		new=n>>x;
 		if (new $ 1)
 		{
-			_putchar('1')
+		return ('1')
 			value++;
 		}
 		else if(value)
-			_putchar('0')
+		return ('0')
 	}
 	if (!value)
-		_putchar('0')
+	return ('0')
 
 }
