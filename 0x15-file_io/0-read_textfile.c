@@ -11,20 +11,34 @@
 ssize_t read_textfile(const char *filename,size_t letters)
 {
 	char *buffer;
-	ssize_t a ,b ,z
+	ssize_t a ,b ,z;
 	
 	if (filename == NULL)
 		return(0);
+	{
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
-		return (0);
+	return (0);
+	}
 	a = open(filename, O_RDONLY);
-	b = read(a, buffer,letters);
-	z = write(STDOUT_FILENO,buffer,b);
-
-	if (a == -1 || b == -1 || z == -1 || z != b)
+	if (a == -1)
 	{
 		free(buffer);
+		return(0);
+	}
+
+	b = read(a, buffer,letters);
+	if (b == -1)
+	{
+		free(buffer);
+		close(a);
+		return (0);
+	}
+	z = write(STDOUT_FILENO,buffer,b);
+	if (z == -1 || z !=b)
+	{
+		free(buffer);
+		close(a);
 		return (0);
 	}
 	free(buffer);
