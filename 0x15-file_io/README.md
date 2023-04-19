@@ -1,4 +1,11 @@
 WELCOME.
+
+
+
+
+
+
+
 Today we weill be tackling 0x15-file_io in C.
 The following will help out in the sturdy.
 Tasks
