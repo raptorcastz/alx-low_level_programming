@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * binary_to_unit - a function that converts binary no to unsigned int
- * @b:string containing binary number
+ * binary_to_uint - a function that converts binary number to unsigned int
+ * @b: string containing binary number
  *
  * Return: converted number
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int i;
 	unsigned int dec_val = 0;
