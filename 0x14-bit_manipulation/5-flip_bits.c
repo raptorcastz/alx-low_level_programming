@@ -5,7 +5,7 @@
  * @n: number that comes first 
  * @m: second number
  *
- * return:number of new bits expected to change
+ * Return: number of new bits expected to change
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
